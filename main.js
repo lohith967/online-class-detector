@@ -51,13 +51,13 @@ function draw() {
          
           if(objects[i].label == "person")
           {
-            document.getElementById("number_of_objects").innerHTML = "Baby Found";
+            document.getElementById("number_of_objects").innerHTML = "boy or girl found";
             console.log("stop");
             song.stop();
           }
           else
           {
-            document.getElementById("number_of_objects").innerHTML = "Baby Not Found";
+            document.getElementById("number_of_objects").innerHTML = "boy or girl not found";
             console.log("play"); 
             song.play();
           }
@@ -65,7 +65,7 @@ function draw() {
 
         if(objects.length == 0)
         {
-          document.getElementById("number_of_objects").innerHTML = "Baby Not Found";
+          document.getElementById("number_of_objects").innerHTML = "boy or girl not found";
           console.log("play"); 
           song.play();
         }
